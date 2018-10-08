@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AgrupaEjercicios</string>
+    <string name="pulsarRadio">RadioButton</string>
+    <string name="pulsarCheck">CheckButton</string>
+    <string name="pulsarDiferentes">Botones Diferentes</string>
+    <string name="txtHobby">Enseñar Hobby</string>
+</resources>
