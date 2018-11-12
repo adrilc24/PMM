@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pantalla1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/image"
+            android:src="@drawable/dhl"
+            android:layout_width="match_parent"
+            android:layout_height="200px" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indique el tipo de Tarifa que desea:"/>
+    <RadioGroup
+        android:id="@+id/tarifas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/tarifaNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarifa Normal"/>
+        <RadioButton
+            android:id="@+id/tarifaUrgente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarifa Urgente"/>
+    </RadioGroup>
+    <TextView
+        android:text="Indique que opción prefiere:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/envolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Envolver para regalo"/>
+        <CheckBox
+            android:id="@+id/tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Con tarjeta dedicada"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/peso"
+        android:hint="Introduzca aqui el peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+
+        android:id="@+id/calcular"
+        android:text="Calcular el precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

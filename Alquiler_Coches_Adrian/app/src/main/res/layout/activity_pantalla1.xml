@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pantalla1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indique el tipo de Seguro:"/>
+    <RadioGroup
+        android:id="@+id/tipoSeguro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/seguroTodoRiesgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incluye seguro a todo riesgo"/>
+        <RadioButton
+            android:id="@+id/sinSeguro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No incluye seguro"/>
+    </RadioGroup>
+    <TextView
+        android:text="Indique que opción prefiere:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/aire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incluye Aire Acondicionado"/>
+        <CheckBox
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incluye GPS"/>
+        <CheckBox
+            android:id="@+id/dvd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incluye Radio y DVD "/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/marca"
+        android:hint="Introduzca la marca del coche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/modelo"
+        android:hint="Introduzca el modelo del coche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/numHoras"
+        android:hint="Introduzca el tiempo que desea alquilar el coche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/factura"
+        android:text="Crear factura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
