@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GameShopApp</string>
+    <string name="dataError" />
+</resources>
