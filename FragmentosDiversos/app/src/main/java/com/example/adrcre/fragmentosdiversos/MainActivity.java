@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);        // BotÃ³n de aÃ±adir fragments
+        setContentView(R.layout.activity_main);
         Button button = (Button) findViewById(R.id.newFragment);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {addFragment();}
@@ -40,13 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
     void addFragment() {
         mStackPosition++;
-        // Instanciamos nuevo Fragment
         Fragment fragmentoVariable = SimpleFragment.newInstance(mStackPosition);
-        // Se aÃ±ade el Fragment a la actividad
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.replace(R.id.fragmentShow, fragmentoVariable);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-        ft.addToBackStack(null);// poneos la transacion a la pila
+        ft.addToBackStack(null);
         ft.commit();
     }
 

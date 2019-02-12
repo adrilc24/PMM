@@ -21,13 +21,15 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 public class Pantalla1 extends AppCompatActivity {
     public MainActivity[] alquiler = new MainActivity[]{
             new MainActivity("Opel", "Corsa", 48,100,true, "Sin seguro"),
             new MainActivity("Mercedes", "Benz", 72,200, false, "Seguro a Todo Riesgo"),
             new MainActivity("Mazda", "CX5", 12,50, true, "Seguro a Todo Riesgo")
     };
-    //public MainActivity [] miAlquiler;
+
     public int i = 0;
     public Spinner spinner;
     @Override
@@ -52,6 +54,7 @@ public class Pantalla1 extends AppCompatActivity {
         final CheckBox checkBoxDVD = (CheckBox) findViewById(R.id.dvd);
 
         Button factura = (Button) findViewById(R.id.factura);
+        Button dibujos = (Button) findViewById(R.id.dibujos);
         final RadioGroup tipoSeguro = (RadioGroup) findViewById(R.id.tipoSeguro);
         final TextView resultado = (TextView) findViewById(R.id.resultado);
         final EditText horas = (EditText) findViewById(R.id.numHoras);
@@ -134,6 +137,14 @@ public class Pantalla1 extends AppCompatActivity {
                 resultado.setText(alquiler[i].toString());
             }
         });
+        dibujos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Pantalla1.this, dibujitos.class);
+                startActivity(intent);
+            }
+        });
+
     }
     class adapterCoches extends ArrayAdapter{
         Activity context;

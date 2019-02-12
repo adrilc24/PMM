@@ -34,12 +34,12 @@ public class SimpleFragment extends Fragment {
             v = inflater.inflate(R.layout.fragment_simple, container, false);
             View tv = v.findViewById(R.id.text);
             //informamos el nÃºmero de Fragment
-            ((TextView)tv).setText("Fragmento nÃºmero #" + mNum);
+            ((TextView)tv).setText("Fragmento numero " + mNum);
         }
         else{
             v = inflater.inflate(R.layout.fragment_simple2, container, false);
             View tv = v.findViewById(R.id.text2);//informamos el numero de Fragment
-            ((TextView)tv).setText("Fragmento nÃºmero #" + mNum);
+            ((TextView)tv).setText("Fragmento numero " + mNum);
         }
         return v;
     }

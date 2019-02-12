@@ -11,7 +11,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class
+MainActivity extends Activity {
 
     private TextView lblMensaje;
 
